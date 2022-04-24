@@ -15,7 +15,7 @@ import { GatosApiModule } from './gatos-api/gatos-api.module';
     CommonModule,
     ApiNasaModule,
     RouterModule,
-    GatosApiModule
+    GatosApiModule,
   ]
 })
 export class MainModule { }

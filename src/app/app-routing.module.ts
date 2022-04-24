@@ -38,7 +38,7 @@ export const routes: Routes = [
     },
     {
         path: 'list-options/api/gatos/api-result/cat-fill-type', component: ViewResultApiTypeFillCatComponent
-    }
+    },
 ] 
 
 @NgModule({
