@@ -1,0 +1,21 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body ">
+            <div class="d-flex align-items-center">
+                <div class="flex-grow-1 ms-3">
+                  <h5 style="text-align: center; font-family: 'Oswald';">
+                    <img src="https://img.icons8.com/cute-clipart/32/000000/pixel-cat.png"/>
+                     Este é o seu gatinho aleatorio!!
+                  </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let cat of catRequest" style="text-align: center;" class="row">
+        <h3 class="mt-4" style="font-family: Impact;">Gato FOFO S2</h3>
+        <p style="align-items: center;">
+            <img class="mb-2" style="height: 80%; width: 100%;" [src]="cat.url">
+        </p>
+    </div>
+</div>

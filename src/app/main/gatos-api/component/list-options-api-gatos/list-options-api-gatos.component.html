@@ -1,0 +1,48 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body ">
+            <div class="d-flex align-items-center">
+                <div class="flex-grow-1 ms-3">
+                  <h5 style="text-align: center; font-family: 'Oswald';">
+                    <img src="https://img.icons8.com/cute-clipart/32/000000/pixel-cat.png"/>
+                     Seja bem-vindo(a) a API de gatos fofos :)
+                </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-around mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img  style="width: 285px; height: 215px;" src="https://prensadebabel.com.br/wp-content/uploads/2020/07/gato-fofo-750x430.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gatinho fofo</h5>
+              <p class="card-text">Veja ajguma foto/gif de um gatinho para animar o dia ^^.</p>
+              <a [routerLink]="['/list-options/api/gatos/api-result/cat-image']" class="btn btn-success">Ver foto de gatinho</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="col order-5">
+        <div class="card" style="width: 18rem;">
+            <img style="width: 285px; height: 215px;" src="http://pa1.narvii.com/7053/130228432a3e223dd13fba69d9daa5b65a6335c5r1-320-320_00.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ver imagem da data X</h5>
+              <p class="card-text">Selecione uma data para ver a foto tirada neste dia.</p>
+              <mat-form-field appearance="fill">
+                <mat-label>Tipo do arquivo</mat-label>
+                <mat-select [(ngModel)]="fillingType">
+                  <mat-option *ngFor="let fillTypesCat of fillTypesCat" [value]="fillTypesCat.value">
+                    {{fillTypesCat.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <a (click)="fillingTypeRequest()" [routerLink]="['/list-options/api/gatos/api-result/cat-fill-type']"  class="btn btn-success">Ver foto</a>
+            </div>
+        </div>
+      </div>
+</div>
+

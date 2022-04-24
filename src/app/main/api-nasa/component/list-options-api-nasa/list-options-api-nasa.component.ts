@@ -4,7 +4,6 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-list-options-api-nasa',
   templateUrl: './list-options-api-nasa.component.html',
-  styleUrls: ['./list-options-api-nasa.component.css'],
   providers: [DatePipe]
 })
 export class ListOptionsApiNasaComponent implements OnInit {
