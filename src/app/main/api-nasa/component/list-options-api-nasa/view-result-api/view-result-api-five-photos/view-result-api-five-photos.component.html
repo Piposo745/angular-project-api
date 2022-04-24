@@ -1,0 +1,22 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body ">
+            <div class="d-flex align-items-center">
+                <div class="flex-grow-1 ms-3">
+                  <h5 style="text-align: center; font-family: 'Oswald';">
+                    <img src="https://img.icons8.com/color/32/000000/nasa.png"/>
+                     Esta são as suas cinco imagens aleatorias
+                  </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let photos of fivePhotos" style="text-align: center;" class="row">
+        <h3 *ngIf="photos.title" style="font-family: Impact;">{{photos.title}}</h3>
+        <p style="align-items: center;">
+            <img class="mb-2" style="height: 80%; width: 100%;" [src]="photos.hdurl">
+            <a>{{photos.explanation}}</a>
+        </p>
+    </div>
+</div>
