@@ -13,7 +13,7 @@
     </div>
 
     <div *ngFor="let photos of fivePhotos" style="text-align: center;" class="row">
-        <h3 *ngIf="photos.title" style="font-family: Impact;">{{photos.title}}</h3>
+        <h3 *ngIf="photos.title" style="font-family: Impact;">{{photos.title}} - {{photos.date | date: 'dd/MM/yyyy'}}</h3>
         <p style="align-items: center;">
             <img class="mb-2" style="height: 80%; width: 100%;" [src]="photos.hdurl">
             <a>{{photos.explanation}}</a>
